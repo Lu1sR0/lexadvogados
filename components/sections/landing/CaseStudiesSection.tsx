@@ -38,7 +38,7 @@ export default function CaseStudiesSection() {
           </div>
           <a
             href="#"
-            className="font-label text-[10px] tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors border-b border-outline-variant/30 pb-2 hover-underline-animation reveal-text"
+            className="hover-underline-animation font-label text-[10px] tracking-[0.2em] text-on-surface-variant hover:text-primary transition-colors pb-2 reveal-text"
           >
             VER TODOS OS CASOS
           </a>
@@ -69,8 +69,11 @@ export default function CaseStudiesSection() {
                 <p className="text-on-surface-variant leading-relaxed mb-8">
                   {c.description}
                 </p>
-                <button className="font-label text-[10px] tracking-[0.2em] border-b border-primary text-primary pb-1 hover:border-b-2 transition-all">
+                <button className="group/btn flex items-center gap-3 font-label text-[10px] tracking-[0.2em] text-primary pb-1 hover:gap-5 transition-all duration-500">
                   LER DETALHES DO CASO
+                  <span className="material-symbols-outlined text-sm transition-transform duration-500 group-hover/btn:translate-x-1">
+                    arrow_forward
+                  </span>
                 </button>
               </div>
             </div>
@@ -87,8 +90,11 @@ export default function CaseStudiesSection() {
                 <p className="text-on-surface-variant leading-relaxed mb-8">
                   {c.description}
                 </p>
-                <button className="font-label text-[10px] tracking-[0.2em] border-b border-primary text-primary pb-1 hover:border-b-2 transition-all">
+                <button className="group/btn flex items-center gap-3 font-label text-[10px] tracking-[0.2em] text-primary pb-1 hover:gap-5 transition-all duration-500">
                   LER DETALHES DO CASO
+                  <span className="material-symbols-outlined text-sm transition-transform duration-500 group-hover/btn:translate-x-1">
+                    arrow_forward
+                  </span>
                 </button>
               </div>
               <div className="md:col-span-7 md:col-start-6 order-1 md:order-2 relative group overflow-hidden reveal-image">

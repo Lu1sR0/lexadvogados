@@ -14,13 +14,19 @@ export default function AttorneyCTASection() {
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <TransitionLink href="/contact">
-            <button className="w-full sm:w-auto bg-primary text-on-primary px-10 py-5 font-label text-[0.85rem] tracking-[0.2em] uppercase hover:bg-on-primary-container hover:shadow-2xl hover:shadow-primary/20 transition-all">
+            <button className="w-full sm:w-auto btn-premium group relative inline-flex items-center gap-4 bg-primary text-on-primary px-10 py-5 font-label text-[0.85rem] tracking-[0.2em] uppercase hover:bg-on-primary-container">
               Consultar os Sócios
+              <span className="material-symbols-outlined text-base transition-transform duration-500 group-hover:translate-x-1">
+                arrow_forward
+              </span>
             </button>
           </TransitionLink>
           <TransitionLink href="/practice-areas">
-            <button className="w-full sm:w-auto border-b-2 border-primary text-on-surface px-10 py-5 font-label text-[0.85rem] tracking-[0.2em] uppercase hover:bg-surface-container-high transition-all">
+            <button className="w-full sm:w-auto btn-gold-outline group relative inline-flex items-center gap-4 text-on-surface px-10 py-5 font-label text-[0.85rem] tracking-[0.2em] uppercase">
               Ver Todas as Áreas
+              <span className="material-symbols-outlined text-base transition-transform duration-500 group-hover:translate-x-1">
+                arrow_right_alt
+              </span>
             </button>
           </TransitionLink>
         </div>

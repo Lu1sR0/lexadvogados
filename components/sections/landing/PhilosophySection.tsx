@@ -12,7 +12,7 @@ export default function PhilosophySection() {
                 alt="Interior arquitetônico minimalista"
                 className="w-full aspect-[4/5] object-cover grayscale brightness-75 reveal-image"
               />
-              <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-primary/10 backdrop-blur-3xl -z-10 animate-pulse" />
+              <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-primary/10 backdrop-blur-3xl -z-10 glow-float" />
             </div>
           </div>
 
@@ -40,19 +40,19 @@ export default function PhilosophySection() {
               </p>
             </div>
             <div className="mt-12 grid grid-cols-2 gap-12 reveal-text">
-              <div className="group">
+              <div className="group border-b border-outline-variant/10 pb-6 hover:border-primary/40 transition-colors duration-500 cursor-default">
                 <span className="font-headline text-3xl text-primary block mb-2 transform group-hover:translate-x-2 transition-transform duration-500">
                   01
                 </span>
-                <span className="font-label text-[10px] tracking-[0.2em] uppercase">
+                <span className="font-label text-[10px] tracking-[0.2em] uppercase group-hover:text-on-surface transition-colors duration-300">
                   Integridade Estrutural
                 </span>
               </div>
-              <div className="group">
+              <div className="group border-b border-outline-variant/10 pb-6 hover:border-primary/40 transition-colors duration-500 cursor-default">
                 <span className="font-headline text-3xl text-primary block mb-2 transform group-hover:translate-x-2 transition-transform duration-500">
                   02
                 </span>
-                <span className="font-label text-[10px] tracking-[0.2em] uppercase">
+                <span className="font-label text-[10px] tracking-[0.2em] uppercase group-hover:text-on-surface transition-colors duration-300">
                   Precisão Inabalável
                 </span>
               </div>

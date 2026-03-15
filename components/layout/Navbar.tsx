@@ -40,9 +40,9 @@ export default function Navbar() {
             <TransitionLink
               key={link.href}
               href={link.href}
-              className={`nav-link font-label text-[10px] tracking-[0.2em] transition-colors ${
+              className={`nav-link font-label text-[10px] tracking-[0.2em] transition-colors duration-300 ${
                 pathname === link.href
-                  ? "text-primary"
+                  ? "text-primary nav-link-active"
                   : "text-on-surface-variant hover:text-primary"
               }`}
             >
@@ -52,11 +52,11 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-6">
-          <button className="text-on-surface-variant hover:text-primary transition-transform hover:scale-110">
+          <button className="cursor-pointer text-on-surface-variant hover:text-primary transition-all duration-300 hover:scale-110 hover:rotate-12">
             <span className="material-symbols-outlined">language</span>
           </button>
           <TransitionLink href="/contact">
-            <button className="bg-primary text-on-primary px-6 py-2.5 font-label text-[10px] tracking-[0.15em] hover:bg-on-primary-container transition-all hover:shadow-[0_0_20px_rgba(218,199,105,0.3)] transform hover:-translate-y-0.5 active:translate-y-0">
+            <button className="cursor-pointer btn-premium bg-primary text-on-primary px-6 py-2.5 font-label text-[10px] tracking-[0.15em] hover:bg-on-primary-container">
               AGENDAR CONSULTA
             </button>
           </TransitionLink>

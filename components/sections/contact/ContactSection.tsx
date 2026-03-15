@@ -15,15 +15,23 @@ export default function ContactSection() {
               <p className="text-[0.65rem] font-label tracking-[0.3em] text-secondary mb-4 uppercase">
                 Correspondência Direta
               </p>
-              <p className="font-headline text-3xl hover:text-primary transition-colors duration-500 cursor-pointer underline decoration-outline-variant underline-offset-8">
+              <a
+                href="mailto:contato@lexadvocacia.com.br"
+                className="font-headline text-3xl hover:text-primary transition-colors duration-500 hover-underline-animation"
+              >
                 contato@lexadvocacia.com.br
-              </p>
+              </a>
             </div>
             <div>
               <p className="text-[0.65rem] font-label tracking-[0.3em] text-secondary mb-4 uppercase">
                 Central de Atendimento
               </p>
-              <p className="font-headline text-3xl">+55 (11) 4002-8922</p>
+              <a
+                href="tel:+551140028922"
+                className="font-headline text-3xl hover:text-primary transition-colors duration-500 hover-underline-animation"
+              >
+                +55 (11) 4002-8922
+              </a>
             </div>
             <div className="pt-8 border-l border-primary pl-8">
               <p className="text-on-surface-variant max-w-sm leading-relaxed">
@@ -115,7 +123,7 @@ export default function ContactSection() {
                 type="submit"
                 className="group relative inline-flex items-center text-primary font-label tracking-[0.2em] text-xs font-bold uppercase overflow-hidden active:scale-95 transition-transform"
               >
-                <span className="relative z-10">Iniciar Consulta</span>
+                <span className="relative z-10">INICIAR CONSULTA</span>
                 <span className="material-symbols-outlined ml-4 transition-transform duration-500 group-hover:translate-x-2 relative z-10">
                   arrow_right_alt
                 </span>

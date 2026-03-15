@@ -50,12 +50,12 @@ export default function AttorneysList() {
               className="grid grid-cols-1 lg:grid-cols-12 gap-0 mb-40 items-center attorney-card reveal-item"
             >
               <div className="lg:col-span-5 relative z-10">
-                <div className="aspect-[4/5] overflow-hidden">
+                <div className="aspect-[4/5] overflow-hidden group">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={attorney.image}
                     alt={`Retrato de ${attorney.name}`}
-                    className="attorney-img w-full h-full object-cover grayscale"
+                    className="attorney-img w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-out"
                   />
                 </div>
               </div>
@@ -118,12 +118,12 @@ export default function AttorneysList() {
                 </div>
               </div>
               <div className="lg:col-span-5 order-1 lg:order-2">
-                <div className="aspect-[4/5] overflow-hidden">
+                <div className="aspect-[4/5] overflow-hidden group">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={attorney.image}
                     alt={`Retrato de ${attorney.name}`}
-                    className="attorney-img w-full h-full object-cover grayscale"
+                    className="attorney-img w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-out"
                   />
                 </div>
               </div>

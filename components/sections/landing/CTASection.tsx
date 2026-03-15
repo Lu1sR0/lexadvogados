@@ -9,8 +9,11 @@ export default function CTASection() {
         </h2>
         <div className="reveal-text">
           <TransitionLink href="/contact">
-            <button className="bg-primary text-on-primary px-12 py-5 font-label text-xs tracking-[0.3em] hover:bg-on-primary-container transition-all hover:px-14 active:scale-95">
+            <button className="group relative inline-flex items-center gap-4 btn-premium bg-primary text-on-primary px-12 py-5 font-label text-xs tracking-[0.3em] hover:bg-on-primary-container">
               INICIAR CONSULTA
+              <span className="material-symbols-outlined text-base transition-transform duration-500 group-hover:translate-x-2">
+                arrow_forward
+              </span>
             </button>
           </TransitionLink>
         </div>

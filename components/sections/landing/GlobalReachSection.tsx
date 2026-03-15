@@ -19,11 +19,14 @@ export default function GlobalReachSection() {
           <div className="reveal-text">
             <div className="grid grid-cols-2 gap-8">
               {offices.map((office) => (
-                <div key={office.city} className="group cursor-default">
-                  <h4 className="font-label text-[12px] tracking-widest text-on-surface mb-2 group-hover:text-primary transition-colors">
-                    {office.city}
-                  </h4>
-                  <p className="text-sm text-on-surface-variant">
+                <div key={office.city} className="group cursor-default border-b border-outline-variant/10 pb-6 hover:border-primary/30 transition-colors duration-500">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="w-0 h-px bg-primary group-hover:w-4 transition-all duration-500 ease-out" />
+                    <h4 className="font-label text-[12px] tracking-widest text-on-surface group-hover:text-primary transition-colors duration-300">
+                      {office.city}
+                    </h4>
+                  </div>
+                  <p className="text-sm text-on-surface-variant group-hover:text-on-surface/70 transition-colors duration-300 pl-0 group-hover:pl-6 transition-all">
                     {office.address}
                   </p>
                 </div>
