@@ -23,6 +23,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "LEX Advocacia",
   description: "Precisão na Prática. Excelência na Execução.",
+
 };
 
 export default function RootLayout({
