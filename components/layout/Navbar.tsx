@@ -133,7 +133,7 @@ export default function Navbar() {
 
         {/* Links */}
         <nav className="flex flex-col px-6 py-8 gap-1 flex-1">
-          {navLinks.map((link, i) => (
+          {navLinks.map((link) => (
             <TransitionLink
               key={link.href}
               href={link.href}
@@ -142,7 +142,6 @@ export default function Navbar() {
                   ? "text-primary"
                   : "text-on-surface-variant hover:text-primary"
               }`}
-              style={{ transitionDelay: menuOpen ? `${i * 60}ms` : "0ms" }}
             >
               <span
                 className={`w-4 h-[1px] bg-current transition-all duration-300 ${
